@@ -8,10 +8,10 @@ void PrintStr(char *str);
 int main()
 {
 	char str[SIZE] = { "I am  learn prog"};
-	char *p_str[SIZE];
+	char *pStr[SIZE];
 	for (int i = 0; i < SIZE; i++){
-		p_str[i] = &str[i];
-		printf("%s", p_str[i]);
+		pStr[i] = &str[i];
+		printf("%s", pStr[i]);
 	}
 	putchar('\n');
 	return 0;
@@ -24,12 +24,12 @@ void GetPointer()
 	printf("%p\t%d\n", pNum, *pNum);
 
 	char name[] = "myname";
-	char *p_name = name;
+	char *pName = name;
 	
 	// string is cannot be change, but with pointer...
 	for(int i = 0; i < strlen(name); i++){
-		fprintf(stdout, "%c", *p_name++);
-		if (*p_name == 'a') *p_name = 'A';
+		fprintf(stdout, "%c", *pName++);
+		if (*pName == 'a') *pName = 'A';
 	}	
 	putchar('\n');
 }
