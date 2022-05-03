@@ -27,7 +27,7 @@ int is_valid_ip(const char *addr)
 
 int isValid_ip(const char *addr)
 {
- uint8_t dot_count=0 , is_first_num=1;
+	uint8_t dot_count=0 , is_first_num=1;
     uint16_t num=0;
     
     for(uint8_t i=0; addr[i]!='\0'; i++) {
