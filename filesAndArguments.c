@@ -7,7 +7,7 @@ void std();
 int main(int a, char *argv[])
 {
 	printf("%d\n", a);
-	if (a == 2) exit(-1);
+	if (a <= 2) exit(-1);
 
 	int lower = atoi(argv[1]);
 	int higher = atoi(argv[2]);
